@@ -1,0 +1,105 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-10-02T15:05:57.051Z",
+        "line": 3,
+        "name": "Search via google",
+        "description": "",
+        "id": "google;search-via-google",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4092703800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the Google page",
+            "match": {
+              "location": "google_StepDefinition.goToGoogle()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15546300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Page loads properly",
+            "match": {
+              "location": "google_StepDefinition.waitForPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 152497200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User will search name in  the search box",
+            "match": {
+              "location": "google_StepDefinition.searchElement(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name"
+                ]
+              },
+              {
+                "cells": [
+                  "sushmitha"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-10-02T15:06:01.355Z",
+        "line": 12,
+        "name": "Open the facebook.com",
+        "description": "",
+        "id": "google;open-the-facebook.com",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5043642300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User is on facebook.com",
+            "match": {
+              "location": "google_StepDefinition.openFacebook()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      }
+    ],
+    "name": "Google",
+    "description": "",
+    "id": "google",
+    "keyword": "Feature",
+    "uri": "file:/C:/Users/Sushmitha/eclipse-workspace/CucumberFrameworkPractise/src/main/java/Feature_Package/google.feature",
+    "tags": []
+  }
+]
